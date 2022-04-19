@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <UserSecretsId>84ad054e-94fb-4be3-a32b-931eb4d760f7</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..\..\..</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Modules\Customer\Module.Customer.Infraestructure\Module.Customer.Infraestructure.CrossCutting\Module.Customer.Infraestructure.CrossCutting.csproj" />
+    <ProjectReference Include="..\..\..\Modules\Finances\Module.Finances.Infraestructure\Module.Finances.Infraestructure.CrossCutting\Module.Finances.Infraestructure.CrossCutting.csproj" />
+    <ProjectReference Include="..\..\..\Modules\Flow\Module.Flow.Infraestructure\Module.Flow.Infraestructure.CrossCutting\Module.Shared.Infraestructure.CrossCutting.csproj" />
+    <ProjectReference Include="..\..\..\Modules\Identity\Module.Identity.Infraestructure\Module.Identity.Infraestructure.CrossCutting\Module.Identity.Infraestructure.CrossCutting.csproj" />
+    <ProjectReference Include="..\..\..\Modules\Report\Module.Report\Module.Report.csproj" />
+    <ProjectReference Include="..\..\..\Modules\Shared\Module.Shared\Module.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
